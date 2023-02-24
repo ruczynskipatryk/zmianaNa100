@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Wyzwanie - ZmianaNa100</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,53 +12,174 @@
     />
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="navbar bg-body-tertiary">
+  <body class="bg-black">
+    <nav class="navbar bg-body-black">
       <div class="container-fluid">
-        <a class="navbar-brand m-2" href="#">
+        <a class="navbar-brand m-2 d.block mx-auto" href="#">
           <img
             src="ZMIANA NA 100.png"
             alt="Logo"
-            width="60"
-            height="60"
+            width="80"
+            height="80"
             class="d.block mx-auto"
           />
         </a>
       </div>
     </nav>
 
-    <h1>Witaj! Projekt zmiana 100</h1>
-    <p>
-      Nie szukaj magicznych rozwiązań zacznij od najprostszych rzeczy i zobacz
-      efekty już po kilku dniach!
-    </p>
-
-    <p>
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseWidthExample"
-        aria-expanded="false"
-        aria-controls="collapseWidthExample"
-      >
-        Poznaj szczegóły
-      </button>
-    </p>
-    <div style="min-height: 200px">
-      <div class="collapse collapse-horizontal" id="collapseWidthExample">
-        <div class="card card-body" style="width: 500px">
-          Co może dać Ci wyzywanie Zmiana na 100? Lepsze samopoczucie, więcej
-          energii i samozadowolenie! Ile to kosztuję? 0zł! Wszystkie materiały
-          są dostępne za darmo do pobrania poniżej. Czym jest zmianana100? To
-          projekt, który ruszył w marcu 2023 roku, ale jeżeli odkrywasz go
-          dopiero po czasie to nic straconego, bo dołączyć możesz kiedy
-          zechcesz! W skrócie chodzi o zmianę swoich nawyków na lepsze! Spróbuj
-          swoich sił, codziennie wykreślaj kolejne dni, motywuj się i działaj!
-          Wszystkie niezbędne informacje i pliki do pobrania poniżej, za darmo!
+    <section class="title">
+      <div class="container text-center text-light">
+        <div class="row">
+          <h1>
+            Nie szukaj magicznych rozwiązań..
+          </h1>
+          <h2>
+            Zacznij od najprostszych rzeczy i zobacz
+            efekty już po kilku dniach!
+          </h2>
         </div>
       </div>
-    </div>
+    </section>
+    <sectiom class="questions-buttons">
+      <div class="container-fluid col-5" id="info">
+          <p class="row">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample1"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample1"
+            >
+              Czym jest ZmianaNa100?
+            </button>
+          </p>
+          <div class="collapse collapse-horizontal mb-2" id="collapseWidthExample1">
+            <div class="card card-body bg-dark text-light" style="width: 230px">
+              To projekt, który ruszył w 6 marca 2023 roku, ale jeżeli odkrywasz go
+              po czasie to nic straconego, bo dołączyć możesz zawsze! W skrócie
+              chodzi o zmianę swoich nawyków na lepsze! Spróbuj swoich sił,
+              codziennie wykreślaj kolejne dni, motywuj się i działaj!
+            </div>
+          </div>
+          <p class="row">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample2"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample2"
+            >
+              Dlaczego warto?
+            </button>
+          </p>
+          <div class="collapse collapse-horizontal mb-2" id="collapseWidthExample2">
+            <div class="card card-body bg-dark text-light" style="width: 230px">
+              Gwarantowane lepsze samopoczucie, więcej energii i samozadowolenie!
+            </div>
+          </div>
+          <p class="row">
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample3"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample3"
+            >
+              Ile to kosztuje?
+            </button>
+          </p>
+          <div class="collapse collapse-horizontal mt-1" id="collapseWidthExample3">
+            <div class="card card-body bg-dark text-light" style="width: 230px">
+              0zł! Wszystkie materiały są dostępne za darmo do pobrania poniżej.
+            </div>
+          </div>
+        </div>
+      </div>
+    </sectiom>
+
+    <section class="why-its-worth">
+      <div class="container mx-auto col-md-4 col-sm-4">
+        <div class="row">
+          <button class="btn btn-success mb-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Poznaj szczegóły wyzwania
+          </button>
+          <div class="offcanvas offcanvas-start bg-dark text-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <h4>Co należy robić podczas wyzwania? </h4>
+                <ul>
+                  <li>Trenować minimum 20 minut dziennie</li>
+                  <li>Odżywiać się zdrowo</li>
+                  <li>Spać minimum 7 godzin</li>
+                </ul>
+                <h4>Czego nie robić podczas wyzwania? </h4>
+                <ul>         
+                  <li>Nie jeść słodyczy </li>
+                  <li>Nie jeść fast foodów</li>
+                  <li>Nie pić alkoholu</li>
+                </ul>
+                Możesz też dorzucić swoje własne codzienne wyzwanie. Może to być na przykład czytać książkę 20 minut dziennie, zostawiłem na to specjalne miejsce na tablicy do wykreślania, która jest dostępna w plikach do pobrania.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-success mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+            Jakie narzędzia otrzymasz?
+          </button>
+          <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel2">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <h4>Twoje narzędzia</h4>
+                <ul>
+                  <li>Plan treningowy na różny poziom zaawansowania, każdy wykonasz w 20 minut! </li>
+                  <li>15 przepisów na pyszne śniadania, obiady i kolacje.</li>
+                  <li>Grafikę do wykreślania, żeby móc kontrolować swój progres.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="downloads">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row">
+          <div class="card me-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Plan treningowy</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Poziom 1</h6>
+              <p class="card-text">Ten plan wykonasz będac nawet na pocztku swojej drogi ze sportem.</p>
+              <button href="#" class="btn btn-info bg-dark text-light ">Pobierz</button>
+            </div>
+          </div>
+          <div class="card me-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Plan treningowy</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Poziom 2</h6>
+              <p class="card-text">Coś dla srednio-zaawansowanych. Ten plan jest trudniejszy niż poziom 1.</p>
+              <button href="#" class="btn btn-info bg-dark text-light">Pobierz</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Plan treningowy</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Poziom 3</h6>
+              <p class="card-text">To plan dla prawdziwych wyjadaczy, jeżeli czujesz się na siłach wybierz właśnie ten!</p>
+              <button href="#" class="btn btn-info bg-dark text-light">Pobierz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <scirpt src="app.js">
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
